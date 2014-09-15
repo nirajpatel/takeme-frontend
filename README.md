@@ -1,7 +1,6 @@
 takeme: Frontend
 ===============
-Description: Based on your current location, we will show you the next available public transit to take you wherever you want to go.
----------------
+####Based on your current location, we will show you the next available public transit to take you wherever you want to go.
 
 **Frontend:** The frontend is coded in HTML, CSS, and Javascript. Bootstrap has been used for easy styling, and has been tweaked to be more clean/flat and to fit the takeme branding scheme. AngularJS is used for dynamic web content consumption.
 
