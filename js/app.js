@@ -52,7 +52,7 @@ angular.module('tripForm', ['ngAnimate', 'ui.router', 'ngResource'])
 .factory('UserLocation', function($resource) {
 	return {
 		query: function(_latitude, _longitude) {
-			return $resource('http://localhost:8080/location/origin/getlocation', {}, {
+			return $resource('http://takeme-application.herokuapp.com/location/origin/getlocation', {}, {
 				query: {method: 'GET', params: {latitude:_latitude, longitude:_longitude}, isArray: false}});
 		}
 	}
@@ -61,7 +61,7 @@ angular.module('tripForm', ['ngAnimate', 'ui.router', 'ngResource'])
 .factory('Result', function($resource) {
 	return {
 		query: function(_origin, _destination, _mode, _time) {
-			return $resource('http://localhost:8080/trips/itineraries/gettrip', {}, {
+			return $resource('http://takeme-application.herokuapp.com/trips/itineraries/gettrip', {}, {
 				query: {method: 'GET', params: {origin: _origin, destination: _destination, mode: _mode, time: _time}, isArray: false}});
 		}
 	}
