@@ -14,8 +14,8 @@ takeme: Frontend
 2. **CSS (./css)**
   * **bootstrap.css:** Bootstrap base file.
   * **bootstrap-theme.css:** Boostrap theme extension file.
-3. **Fonts (./fonts)**
-4. **JS (./js)**
+3. **JS (./js)**
   * **app.js:** AngularJS file containing all form logic and serves as a client that consumes RESTful backend.
+4. **Images (./img)**
 
 **Experience:** I have had experience for several years with HTML and CSS. This is my first time writing javascript code. I chose to use AngularJS as it seemed a bit easier to pick up. Due to time constraints I could not abstract app.js out to seperate files based on controllers, factories, etc. Given more time I would have split app.js into several files.
