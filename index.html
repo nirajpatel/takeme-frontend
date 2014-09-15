@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>takeme: Public Transportation Itineraries</title>
+		<!-- Generic Metas -->
+		<meta name="description" content="Based on your current location, we will show you the next available public transit to take you wherever you want to go.">
+		<meta name="keywords" content="takeme, public, transportation, transit, directions, trip, itinerary">
+		<meta name="author" content="Niraj Patel">
+
+		<!-- Facebook Metas -->
+		<meta property="og:title" content="Takeme: Public Transportation Itineraries"/>
+	    <meta property="og:url" content="http://nirajpatel.io/"/>
+	    <meta property="og:image" content="http://nirajpatel.io/img/facebook/thumb.png"/>
+	    <meta property="og:description"
+	          content="Based on your current location, we will show you the next available public transit to take you wherever you want to go."/>
+
+		<!-- Mobile Specific Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="./css/bootstrap.css">
+		<link rel="stylesheet" href="./css/bootstrap-theme.css">
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="./img/favicons/favicon.ico">
+		<link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+	</head>
+	<body>
+		<!-- Navbar -->
+		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="logo">
+					<h2 class="fat">take</h2><h2 class="skinny">me</h2>
+				</div>
+			</div>
+		</div>
+
+		<!-- takeme description -->
+		<div class="container pull-down">
+			<div class="description">
+				<p>Based on your current location, we will show you the next available public transit to take you wherever you want to go.</p>
+			</div>
+		</div>
+
+		<!-- Form -->
+		<div ng-app="tripForm">
+			<div class="container">
+				<div ui-view></div>
+			</div>
+		</div>
+
+		<!-- Create space for mobile views -->
+		<div class="clear"></div>
+
+		<!-- Footer -->
+		<div class="navbar navbar-fixed-bottom">
+			<hr />
+			<b>take</b>me by <a href="http://nirajpatel.io/">Niraj Patel</a>
+		</div>
+
+		<!-- Javascript -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-resource.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="./js/app.js"></script>
+	</body>
+</html>

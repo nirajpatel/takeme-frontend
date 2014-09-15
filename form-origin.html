@@ -1,0 +1,47 @@
+<!-- Step progress -->
+<div class="row bs-wizard" style="border-bottom:0;">
+	<div class="col-xs-4 bs-wizard-step complete">
+		<div class="text-center bs-wizard-stepnum">Step 1: <b>Origin</b></div>
+		<div class="progress"><div class="progress-bar"></div></div>
+		<a ui-sref="form.origin" class="bs-wizard-dot"></a>
+	</div>
+
+	<div class="col-xs-4 bs-wizard-step disabled"><!-- complete -->
+		<div class="text-center bs-wizard-stepnum">Step 2: <b>Destination</b></div>
+		<div class="progress"><div class="progress-bar"></div></div>
+		<a href="#" class="bs-wizard-dot"></a>
+	</div>
+
+	<div class="col-xs-4 bs-wizard-step disabled"><!-- complete -->
+		<div class="text-center bs-wizard-stepnum">Step 3: <b>Result</b></div>
+		<div class="progress"><div class="progress-bar"></div></div>
+		<a href="#" class="bs-wizard-dot"></a>
+		</div>
+	</div>
+</div>
+
+<!-- Origin step description -->
+<div class="input-group step-description">
+	<b>Leaving from:</b> Click next if the following fields contain your correct starting location, or edit the fields accordingly
+</div>
+
+<!-- Origin form -->
+<form name ="originForm">
+	<div class="input-group below24 bias-input-group">
+		<span class="input-group-addon">Address</span>
+		<input type="text" value="" class="form-control" name="address" size="34" ng-model="formData.originAddress" />
+		<span class="input-group-addon">City</span>
+		<input type="text" value="" class="form-control" name="city" size="14" ng-model="formData.originCity" />
+		<span class="input-group-addon">State</span>
+		<input type="text" value="" class="form-control" name="state" size="1" ng-model="formData.originState" />
+		<span class="input-group-addon">Zipcode</span>
+		<input type="text" value="" class="form-control" name="zipcode" size="1" ng-model="formData.originZipcode" />
+	</div>
+</form>
+
+<!-- Form navigation -->
+<div class="navigation">
+	<a ui-sref="form.destination">
+		<input type="submit" name="next" id="next" value="Next" class="btn btn-info" />
+	</a>
+</div>

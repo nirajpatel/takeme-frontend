@@ -1,0 +1,26 @@
+<!-- Step progress -->
+<div class="row bs-wizard" style="border-bottom:0;">
+    <div class="col-xs-4 bs-wizard-step disabled">
+        <div class="text-center bs-wizard-stepnum">Step 1: <b>Origin</b></div>
+        <div class="progress"><div class="progress-bar"></div></div>
+        <a ui-sref="form.origin" class="bs-wizard-dot"></a>
+    </div>
+
+    <div class="col-xs-4 bs-wizard-step disabled"><!-- complete -->
+        <div class="text-center bs-wizard-stepnum">Step 2: <b>Destination</b></div>
+        <div class="progress"><div class="progress-bar"></div></div>
+        <a ui-sref="form.destination" class="bs-wizard-dot"></a>
+    </div>
+
+    <div class="col-xs-4 bs-wizard-step disabled"><!-- complete -->
+        <div class="text-center bs-wizard-stepnum">Step 3: <b>Result</b></div>
+        <div class="progress"><div class="progress-bar"></div></div>
+        <a href="#" class="bs-wizard-dot"></a>
+        </div>
+    </div>
+</div>
+
+<!-- Start button -->
+<a ui-sref="form.origin">
+	<input type="submit" name="start" id="start" value="Start" class="btn btn-info" ng-click="getOrigin()">
+</a>
