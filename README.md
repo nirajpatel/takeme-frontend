@@ -23,7 +23,5 @@ takeme: Frontend
 **Experience:** I have had experience for several years with HTML and CSS. This is my first time writing javascript code. I chose to use AngularJS as it seemed a bit easier to pick up. Due to time constraints I could not abstract app.js out to seperate files based on controllers, factories, etc. Given more time I would have split app.js into several files.
 
 **Extension points:**
-1. **app.js**
-  * Seperate app.js into smaller javascript files divided by controllers, factories, etc.
-2. **Mobile**
-  * Mostly mobile friendly; however, form inputs need to be on separate lines on mobile.
+**app.js:** Seperate app.js into smaller javascript files divided by controllers, factories, etc.
+**Mobile:** Mostly mobile friendly; however, form inputs need to be on separate lines on mobile.
