@@ -82,7 +82,13 @@ angular.module('tripForm', ['ngAnimate', 'ui.router', 'ngResource'])
 	$scope.latitude = "";
 	$scope.longitude = "";
 
+	$scope.formData.manualOriginAddress = "";
+	$scope.formData.manualOriginCity = "";
+	$scope.formData.manualOriginState = "";
+	$scope.formData.manualOriginZipcode = "";
+
 	//get location based on latitude longitude
+	//to do: why is this so slow?
 	$scope.getLocation = function() {
 		UserLocation.query($scope.latitude, $scope.longitude).query(function(response) {
 			$scope.saveLocation(response);
@@ -104,6 +110,15 @@ angular.module('tripForm', ['ngAnimate', 'ui.router', 'ngResource'])
 
 	//get result based on origin and destination data sent to api
 	$scope.getResult = function() {
+		//sloppy fix for manual origin input
+		$scope.formData.originAddress = ($scope.formData.originAddress === undefined) ? $scope.formData.manualOriginAddress : $scope.formData.originAddress;
+		$scope.formData.originCity = ($scope.formData.originCity === undefined) ? $scope.formData.manualOriginCity : $scope.formData.originCity;
+		$scope.formData.originState = ($scope.formData.originState === undefined) ? $scope.formData.manualOriginState : $scope.formData.originState;
+		$scope.formData.originZipcode = ($scope.formData.originZipcode === undefined) ? $scope.formData.manualOriginZipcode : $scope.formData.originZipcode;
+
+		$scope.formData.originFull = $scope.formData.originAddress + ', ' + $scope.formData.originCity +
+			', ' + $scope.formData.originState + ', ' + $scope.formData.originZipcode;
+
 		$scope.formData.destinationAddress = ($scope.formData.destinationAddress === undefined) ? "" : $scope.formData.destinationAddress;
 		$scope.formData.destinationCity = ($scope.formData.destinationCity === undefined) ? "" : $scope.formData.destinationCity;
 		$scope.formData.destinationState = ($scope.formData.destinationState === undefined) ? "" : $scope.formData.destinationState;

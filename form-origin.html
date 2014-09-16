@@ -29,13 +29,13 @@
 <form name ="originForm">
 	<div class="input-group below24 bias-input-group">
 		<span class="input-group-addon">Address</span>
-		<input type="text" value="" class="form-control" name="address" size="34" ng-model="formData.originAddress" />
+		<input type="text" value="" class="form-control" name="address" size="34" ng-model="formData.originAddress" ng-change="formData.manualOriginAddress=formData.originAddress" />
 		<span class="input-group-addon">City</span>
-		<input type="text" value="" class="form-control" name="city" size="14" ng-model="formData.originCity" />
+		<input type="text" value="" class="form-control" name="city" size="14" ng-model="formData.originCity" ng-change="formData.manualOriginCity=formData.originCity"/>
 		<span class="input-group-addon">State</span>
-		<input type="text" value="" class="form-control" name="state" size="1" ng-model="formData.originState" />
+		<input type="text" value="" class="form-control" name="state" size="1" ng-model="formData.originState" ng-change="formData.manualOriginState=formData.originState" />
 		<span class="input-group-addon">Zipcode</span>
-		<input type="text" value="" class="form-control" name="zipcode" size="1" ng-model="formData.originZipcode" />
+		<input type="text" value="" class="form-control" name="zipcode" size="1" ng-model="formData.originZipcode" ng-change="formData.manualOriginZipcode=formData.originZipcode" />
 	</div>
 </form>
 
