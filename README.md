@@ -2,7 +2,7 @@ takeme: Frontend
 ===============
 ####Based on your current location, we will show you the next available public transit to take you wherever you want to go.
 
-**Live application:** http://takeme.s3-website-us-east-1.amazonaws.com
+**Live application:** http://takeme.s3-website-us-east-1.amazonaws.com. Note: Automatic user geolocation works; however, at times it is slow. If at first it does not work after a few seconds, please try again or manually input origin.
 
 **Frontend:** The frontend is coded in HTML, CSS, and Javascript. Bootstrap has been used for easy styling, and has been tweaked to be more clean/flat and to fit the takeme branding scheme. AngularJS is used for dynamic web content consumption.
 
